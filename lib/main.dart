@@ -90,7 +90,7 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
           GridTextColumn(
               columnName: 'id',
               label: Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.center,
                   child: Text(
                     'ID',
@@ -98,14 +98,14 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
           GridTextColumn(
               columnName: 'name',
               label: Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.center,
                   child: Text('Name'))),
           GridTextColumn(
               width: 120.0,
               columnName: 'designation',
               label: Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.center,
                   child: Text(
                     'Designation',
@@ -114,7 +114,7 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
           GridTextColumn(
               columnName: 'salary',
               label: Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.center,
                   child: Text('Salary'))),
         ],
@@ -226,7 +226,7 @@ class EmployeeDataSource extends DataGridSource {
         cells: row.getCells().map<Widget>((e) {
       return Container(
         alignment: Alignment.center,
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Text(e.value.toString()),
       );
     }).toList());
