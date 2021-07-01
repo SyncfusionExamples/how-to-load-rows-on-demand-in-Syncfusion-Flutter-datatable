@@ -87,7 +87,7 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
           });
         },
         columns: <GridColumn>[
-          GridTextColumn(
+          GridColumn(
               columnName: 'id',
               label: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -95,13 +95,13 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
                   child: Text(
                     'ID',
                   ))),
-          GridTextColumn(
+          GridColumn(
               columnName: 'name',
               label: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.center,
                   child: Text('Name'))),
-          GridTextColumn(
+          GridColumn(
               width: 120.0,
               columnName: 'designation',
               label: Container(
@@ -111,7 +111,7 @@ class _LoadMoreDemoState extends State<LoadMoreDemo> {
                     'Designation',
                     overflow: TextOverflow.ellipsis,
                   ))),
-          GridTextColumn(
+          GridColumn(
               columnName: 'salary',
               label: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
